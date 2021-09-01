@@ -1,21 +1,32 @@
 html, body {
-  overflow-x: hidden;
-	height: 100%;
-
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0px;
+    font-weight: 200;
 }
 
 body {
-	font-family: 'Inter', sans-serif;
-	background:#F5F5F5;
-	  position: relative;
+    font-family: 'Inter', sans-serif;
+    background:#F5F5F5;
+    position: relative;
+    font-size: 16px;
+    vertical-align: middle;
+    padding: 40px 0 0 50px;
+}
 
+a {
+    color: #000000;
 }
 
 /* add custom cursor */
 .typed::after {
-  content: "_";
-  display: inline;
-  animation: blink 1s infinite;
+    content: "_";
+    display: inline;
+    animation: blink 1s infinite;
+}
+
+.description {
+    font-weight: 600;
 }
 
 /* custom cursor animation */
@@ -65,13 +76,13 @@ body {
 #red,
 #green,
 #blue{
-		z-index: 5;
+    z-index: 0;
     position:absolute;
-    top:50%;
-    left:50%;
     width:400px;
     height:400px;
-    margin:-200px 0 0 -200px;
+    bottom:15%;
+    right:15%;
+    margin:0px 0 0 0px;
 }
 #red{
     -webkit-animation:7s red linear infinite;
